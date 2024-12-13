@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		
+		form {
+			width: 60%;
+			margin: 35px auto;
+			padding: 15px;
+			border: 0.5px solid #ccc;
+			border-radius: 15px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+		}
+		
+		label {
+			display: ruby-base;
+			margin-bottom: 20px;
+		}
+		
+		input[type="text"], input[type="email"], input[type="DOB"] ,  
+        input[type="tel"], select {
+			width: 90%;
+			height: 40px;
+			margin-bottom:35px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+
+
+		
+		input[type="radio"] {
+			margin-bottom: 20px;
+		}
+		
+		input[type="submit"] {
+			width: 100%;
+			height: 40px;
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h2>Student Registration Form	<p></p>	
+			<label for="fname">First Name:</label> 
+		<input type="text" id="fname" name="fname"><br><br>
+		
+		<label for="lname">Last Name:</label>
+		<input type="text" id="lname" name="lname"><br><br>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+
+		
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone"><br><br>
+
+		<label for="date of birth">date of birth:</label>
+		<input type="date of birth" name=" date of birth" id=" date of birth">
+		<br><br>
+
+
+		<label for="gender">Gender:</label>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other</label><br><br>
+		
+		<label for="course">Course:</label>
+		<select id="course" name="course">
+			<option value="select">Select</option>
+			<option value="btech">HTML BASIS</option>
+			<option value="bca">JAVA SCRIPT</option>
+			<option value="bba">PYTHON</option>
+		</select><br><br>
+		
+		<label for="address">Address:</label>
+		<textarea id="address" name="address" rows="7
+		" cols="35"></textarea><br><br>
+		
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
